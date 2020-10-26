@@ -1,41 +1,21 @@
 package com.bridgelabz.generics;
 
 public class PrintArray {
-		// Integer Array
-		public static void toPrint(int[] a)
-		{
-			for(int i : a) 
-			{
-				System.out.print(i+ "\t");
+		public static <A> void toPrint(A[] intarray) {
+			for(A generic: intarray) {
+				System.out.println(generic);
 			}
-			System.out.println("\n");
+			System.out.println();
 		}
-		//Double Array
-		public static void toPrint(double[] b)
-		{
-			for(double i : b)
-			{
-				System.out.print(i + "\t");
-			}
-			System.out.println("\n");
-		}
-		//Character Array
-		public static void toPrint(char[] c)
-		{
-			for(char i : c)
-			{
-				System.out.print(i + "\t");
-			}
-			System.out.println("\n");
-		}
+
 		public static void main(String[] args)
 		{
-			int[] intArr = {1,2,3,4};
-			double[] doubleArr = {18.0,15.0,850.5,10.2};
-			char[] charArr = {'a','h','a','n'};
-			toPrint(intArr);
-			toPrint(doubleArr);
-			toPrint(charArr);
+			Integer[] intArr = {1, 2, 3, 4};
+			Double[] doubleArr = {18.0, 15.0, 850.5, 10.2};
+			Character[] charArr = {'H', 'E', 'L', 'O'};
+			PrintArray.toPrint(intArr);
+			PrintArray.toPrint(doubleArr);
+			PrintArray.toPrint(charArr);
 		}
 
 }
