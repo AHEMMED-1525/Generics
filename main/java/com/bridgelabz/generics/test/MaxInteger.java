@@ -38,6 +38,21 @@ public class MaxInteger {
 		}
 		return false;
 	}
+	public boolean MaxStringLengthPosition(String str1, String str2, String str3) {
+		if(str1.length() > str2.length() && str1.length() > str2.length()) {
+			System.out.println("First Maximum Length of the String is : " + str1);
+			return true;
+		}
+		if(str2.length() > str1.length() && str2.length() > str3.length()) {
+			System.out.println("Second Maximum Length of the String is : " + str2);
+			return true;
+		}
+		if(str3.length() > str1.length() && str3.length() > str2.length()) {
+			System.out.println("Third Maximum Length of the String is : " + str3);
+			return true;
+		}
+		return false;
+	}
 	
 	
 	

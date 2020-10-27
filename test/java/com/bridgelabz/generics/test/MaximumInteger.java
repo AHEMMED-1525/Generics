@@ -24,11 +24,8 @@ public class MaximumInteger {
 	public void givenInteger_WhenProper_ReturnThirdMaximum() {
 		MaxInteger maxTest = new MaxInteger();
 		boolean result3 = maxTest.MaxAtFirstPosition(50, 60, 100);
-		Assert.assertEquals(true, result3);
-		System.out.println();
-		
+		Assert.assertEquals(true, result3);	
 	}
-	
 	// User cases 2 maximum Float value
 	// test case 2.1
 	@Test
@@ -50,6 +47,28 @@ public class MaximumInteger {
 		MaxInteger maxTest = new MaxInteger();
 		boolean FloatResult = maxTest.maxFloatValuePosition(15.214f, 18.541f, 20.54f);
 		Assert.assertEquals(true, FloatResult);
+	}
+	// test case 3
+	// test case 3.1
+	@Test
+	public void givenString_WhenProper_RetutnFirstMax() {
+		MaxInteger maxTest = new MaxInteger();
+		boolean StringResult = maxTest.MaxStringLengthPosition("Ahemmed", "Lucky", "Food");
+		Assert.assertEquals(true, StringResult);
+	}
+	// test case 3.2
+	@Test
+	public void givenString_WhenProper_RetutnSecondMax() {
+		MaxInteger maxTest = new MaxInteger();
+		boolean StringResult = maxTest.MaxStringLengthPosition("sky", "Colour", "Blue");
+		Assert.assertEquals(true, StringResult);
+	}
+	// test case 3.3
+	@Test
+	public void givenString_WhenProper_RetutnThirdMax() {
+		MaxInteger maxTest = new MaxInteger();
+		boolean StringResult = maxTest.MaxStringLengthPosition("Lion", "King", "of Forest");
+		Assert.assertEquals(true, StringResult);
 	}
 
 }
