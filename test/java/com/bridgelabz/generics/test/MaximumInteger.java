@@ -3,7 +3,6 @@ package com.bridgelabz.generics.test;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class MaximumInteger {
 	// Test case 1.1
 	@Test
@@ -68,5 +67,4 @@ public class MaximumInteger {
 		String StringResult = (String) maxTest.CheckMaximumValue("Forest", "Kings", "Lion");
 		Assert.assertEquals("Lion", StringResult);
 	}
-
 }

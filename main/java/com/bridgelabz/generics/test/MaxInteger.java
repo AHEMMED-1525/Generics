@@ -8,10 +8,6 @@ public class MaxInteger<E extends Comparable<E>> {
 		if(element.compareTo(maximum) > 0 ) {
 			maximum = element;
 		}
-
 		return maximum ;
-	}
-	
-	
-	
+	}	
 }
